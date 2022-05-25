@@ -6,17 +6,28 @@ formato da 10 numeri casuali da 1 a 100. Ogni volta che ne crei uno, stampalo.
 
 
 
-const askNumber = prompt("Inserisci un numero :")
+const askNumber = prompt("Inserisci un numero :");
 
-let arrayFirst = []
+let arrayPrincipal = [];
 
-let randomArray = askNumber * (arrayFirst)
+for(let i = 0; i < askNumber; i++ ){
+    let arraySecond = []
 
-console.log(randomArray)
+    arrayPrincipal.push(arraySecond)
 
-for(let i = 0; i < 10; i++){
+    for(let i = 0; i < 10; i++){
+        
+        indiciRandom = Math.round(Math.random()*10)+1;
 
-    casualArrayContent = arrayFirst[Math.round(Math.random()*10)+1];
-
+        arraySecond.push(indiciRandom)
+    }
+    console.log(arraySecond);
 }
+
+
+console.log(arrayPrincipal);
+
+
+
+
 
